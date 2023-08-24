@@ -6,7 +6,7 @@ metadata:
    ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: laravel-gce.ahmad.com
+  - host: laravel.ahmad.com
     http:
      paths:
      -  pathType: Prefix

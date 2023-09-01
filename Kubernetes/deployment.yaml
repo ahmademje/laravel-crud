@@ -60,14 +60,5 @@ spec:
               mountPath: /var/www/storage/logs
               subPath: logs
           image: 'docker.io/ahmademje/php-oci8'
-      #initContainers:
-      #  - name: initcontainer # Or replace the name
-      #    image: alpine:latest
-      #    command: ["/bin/sh", "-c"]
-      #    args:
-      #    - chown 33:33 storage; # Replace UID and GID with values from the Dockerfile
-      #    volumeMounts:
-      #    - name: laravel-volume  # Or you can replace with any name
-      #      mountPath: /storage # Must match the mount path in the args line
       imagePullSecrets:
         - name: ahmad-pull-secret
